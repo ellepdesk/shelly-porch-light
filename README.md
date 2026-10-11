@@ -1,6 +1,6 @@
 # shelly-porch-light
 
-A small [Shelly Script](https://shelly-api-docs.shelly.cloud/gen2/Scripts/ShellyScriptLanguageFeatures) that runs a porch light on a Shelly 1 Mini Gen3. No cloud, no app automations, no external sunrise/sunset service: the device computes sun times itself.
+A small [Shelly Script](https://shelly-api-docs.shelly.cloud/gen2/Scripts/Overview) that runs a porch light on a Shelly 1 Mini Gen3. No cloud, no app automations, no external sunrise/sunset service: the device computes sun times itself.
 
 ## Behaviour
 
