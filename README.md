@@ -19,6 +19,12 @@ The script configures the input as a detached switch, so motion never drives the
 - Shelly 1 Mini Gen3 (should also work on other Gen2+ devices with one relay and one input).
 - A PIR or similar motion sensor wired to the switch input.
 
+### A note on the motion sensor
+
+Check whether the sensor has a potential-free (dry contact) output. Many mains-powered PIR sensors do not: their switched output is meant to drive a lamp directly and only behaves when there is a real load on it. Connected to the Shelly input alone, which draws almost nothing, such a sensor may never switch off cleanly or may hold the input high through leakage.
+
+If yours is that type, give its output a small load in parallel with the Shelly input, for example a suitably rated power resistor or the coil of a secondary relay whose contact then feeds the input. A sensor with a true potential-free contact can go straight to the input.
+
 ## Install
 
 1. Open `porch_light.js` and set `LAT` and `LON` to your location (decimal degrees, east and north positive).
